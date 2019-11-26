@@ -1,5 +1,5 @@
 ## PPC NTU "KHPI" VR Tour (ВР Тур по ППК НТУ "ХПІ")
-VR Tour of [Poltava Polytechnic college](http://www.polytechnic.poltava.ua/).
+VR Tour of [Poltava Polytechnic college](http://www.polytechnic.poltava.ua/).  
 Explore all audiences, halls and other rooms from your browser!
 
 Link: https://andreybest.github.io/ppc-vr-tour/
