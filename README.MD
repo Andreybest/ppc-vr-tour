@@ -11,6 +11,8 @@ Link: https://andreybest.github.io/ppc-vr-tour/
 2. It is recommended to use PC, mobile phones may sometimes crash because of overload.
 3. If you downloaded repository, make sure to open html files through some type of server (for example VS Code extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)), if you open html file without server, it may not load pictures due to CORS policy.
 
+TO-DO Board: [glo](https://app.gitkraken.com/glo/board/Xd4sHVfJ0wAPwq3g)
+
 TO-DO:
 1. Main menu
 2. Transition animations
