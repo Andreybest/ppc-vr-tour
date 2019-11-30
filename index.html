@@ -37,18 +37,17 @@
 				</script>
 			</a-assets>
 
-
-			<a-entity id="sceneMenuEntrance" class="scene">
-				<a-sky src="#menuEntrance"></a-sky>
-				<a-image src="#logo" position="0 6 -7.6" rotation="0 0 0" scale="2 2 1"></a-image>
-				<a-text value="Welcome to VR tour of\nPoltava Polytechnic College!" position="0 4 -7.6" width="15" align="center"></a-text>
-				<a-text value="Use             to navigate between halls and audiences." position="0 1.8 -7.6" width="12" align="center"></a-text>
-				<a-image src="#arrow" position="-3 2 -7.6"></a-image>
-				<a-text value="Look around and enjoy your tour!" position="0 0 -7.6" width="11" align="center"></a-text>
-				<a-entity template="src: #link" data-src="sceneMenuLobby" data-thumb="#arrow" position="-11.5 -0.12 0.29" rotation="20 90 3"></a-entity>
-			</a-entity>
-
 			<!--Menu-->
+				<a-entity id="sceneMenuEntrance" class="scene">
+					<a-sky src="#menuEntrance"></a-sky>
+					<a-image src="#logo" position="0 6 -7.6" rotation="0 0 0" scale="2 2 1"></a-image>
+					<a-text value="Welcome to VR tour of\nPoltava Polytechnic College!" position="0 4 -7.6" width="15" align="center"></a-text>
+					<a-text value="Use             to navigate between halls and audiences." position="0 1.8 -7.6" width="12" align="center"></a-text>
+					<a-image src="#arrow" position="-3 2 -7.6"></a-image>
+					<a-text value="Look around and enjoy your tour!" position="0 0 -7.6" width="11" align="center"></a-text>
+					<a-entity template="src: #link" data-src="sceneMenuLobby" data-thumb="#arrow" position="-11.5 -0.12 0.29" rotation="20 90 3"></a-entity>
+				</a-entity>
+
 				<a-entity id="sceneMenuLobby" class="scene" visible="false">
 					<a-sky src="#menuLobby"></a-sky>
 					<a-entity template="src: #link" data-src="sceneMenuStairs" data-thumb="#arrow" position="-11.490 -2.327 -13.254" rotation="3.000 50.000 -5.000" scale="1.500 1.500 0.000"></a-entity>
