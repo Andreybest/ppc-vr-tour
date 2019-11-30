@@ -32,7 +32,8 @@ function setScenesVisibleToFalse() {
     }
 
     let query = document.getElementsByClassName('link');
-		for (let j = 0; j < query.length; j++) {
-				query[j].classList.remove('clickable');
-		}
+    
+    for (let j = 0; j < query.length; j++) {
+        query[j].classList.remove('clickable');
+    }
 }
