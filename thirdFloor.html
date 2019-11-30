@@ -64,18 +64,18 @@
 				</script>
 			</a-assets>
 
-			<a-entity id="sceneMain" class="scene">
-				<a-sky src="#floor3HallMiddle1"></a-sky>
-				<a-entity template="src: #link" data-src="sceneFloor3HallMiddle2" data-thumb="#arrow" position="-0.65 -2.5 10" rotation="-30 180 0"></a-entity>
-				<a-entity template="src: #link" data-src="sceneFloor3HallRight1" data-thumb="#arrow" position="-0.65 -2.5 -7.5" rotation="-60 0 0"></a-entity>
-			</a-entity>
-
 			<!--3 floor-->
-				<!--Middle-->
+			<!--Middle-->
+					<a-entity id="sceneFloor3HallMiddle1 " class="scene">
+						<a-sky src="#floor3HallMiddle1"></a-sky>
+						<a-entity template="src: #link" data-src="sceneFloor3HallMiddle2" data-thumb="#arrow" position="-0.65 -2.5 10" rotation="-30 180 0"></a-entity>
+						<a-entity template="src: #link" data-src="sceneFloor3HallRight1" data-thumb="#arrow" position="-0.65 -2.5 -7.5" rotation="-60 0 0"></a-entity>
+					</a-entity>
+
 					<a-entity id="sceneFloor3HallMiddle2" class="scene" visible="false">
 						<a-sky src="#floor3HallMiddle2"></a-sky>
 						<a-entity template="src: #link" data-src="sceneFloor3HallLeft1" data-thumb="#arrow" position="-9.3 -2.5 0" rotation="0 90 0"></a-entity>
-						<a-entity template="src: #link" data-src="sceneMain" data-thumb="#arrow" position="9.5 -2.5 -0.5" rotation="0 270 0"></a-entity>
+						<a-entity template="src: #link" data-src="sceneFloor3HallMiddle1 " data-thumb="#arrow" position="9.5 -2.5 -0.5" rotation="0 270 0"></a-entity>
 						<a-entity template="src: #link" data-src="sceneAssemblyHall" data-thumb="#arrow" position="-1.7 -2.5 -3" rotation="-23.8 0 8.5"></a-entity>
 						<a-entity template="src: #link" data-src="sceneFloor3HallMiddle3" data-thumb="#arrow" position="-0.17 -2.5 9.3" rotation="0 180 0"></a-entity>
 					</a-entity>
@@ -153,7 +153,7 @@
 				<!--Right side-->
 					<a-entity id="sceneFloor3HallRight1" class="scene" visible="false">
 						<a-sky src="#floor3HallRight1"></a-sky>
-						<a-entity template="src: #link" data-src="sceneMain" data-thumb="#arrow" position="11.8 -2.5 0" rotation="10 270 0"></a-entity>
+						<a-entity template="src: #link" data-src="sceneFloor3HallMiddle1 " data-thumb="#arrow" position="11.8 -2.5 0" rotation="10 270 0"></a-entity>
 						<a-entity template="src: #link" data-src="sceneFloor3HallRight2" data-thumb="#arrow" position="-10 -2.5 0" rotation="-40 90 0"></a-entity>
 						<a-entity template="src: #link" data-src="sceneAudience310" data-thumb="#arrow" position="5.6 -2.5 3.1" rotation="0 235 0"></a-entity>
 						<a-entity template="src: #link" data-src="sceneAudience312" data-thumb="#arrow" position="-6.5 -2.5 3.1" rotation="0 90 18.3"></a-entity>
