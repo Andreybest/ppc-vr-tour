@@ -12,13 +12,18 @@
 		<script src="js/index.js"></script>
 	</head>
 	<body>
-		<a-scene starting-scene="scene: sceneMain">
+		<a-scene starting-scene="scene: sceneMenuEntrance">
 			<a-assets>
 				<audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
 				<img id="arrow" crossorigin="anonymous" src="img/navArrow.png" transparent="true" alpha-test="0.8">
-				<img id="main" crossorigin="anonymous" src="img/panoramas/menu/main.jpg">
 				<img id="logo" crossorigin="anonymous" src="img/logo.png">
 				<img id="thirdFloorUpStairs" crossorigin="anonymous" src="img/floorsIcons/thirdFloorUpStairs.jpg">
+				
+				<!--Menu-->
+					<img id="menuEntrance" crossorigin="anonymous" src="img/panoramas/menu/menuEntrance.jpg">
+					<img id="menuLobby" crossorigin="anonymous" src="img/panoramas/menu/lobby.jpg">
+					<img id="menuStairs" crossorigin="anonymous" src="img/panoramas/menu/stairs.jpg">
+				<!--Menu-->
 
 				<script id="link" type="text/html">
 					<a-entity class="link"
@@ -32,13 +37,9 @@
 				</script>
 			</a-assets>
 
-			<!--Menu-->
-				<img id="menuLobby" crossorigin="anonymous" src="img/panoramas/menu/lobby.jpg">
-				<img id="menuStairs" crossorigin="anonymous" src="img/panoramas/menu/stairs.jpg">
-			<!--Menu-->
 
-			<a-entity id="sceneMain" class="scene">
-				<a-sky src="#main"></a-sky>
+			<a-entity id="sceneMenuEntrance" class="scene">
+				<a-sky src="#menuEntrance"></a-sky>
 				<a-image src="#logo" position="0 6 -7.6" rotation="0 0 0" scale="2 2 1"></a-image>
 				<a-text value="Welcome to VR tour of\nPoltava Polytechnic College!" position="0 4 -7.6" width="15" align="center"></a-text>
 				<a-text value="Use             to navigate between halls and audiences." position="0 1.8 -7.6" width="12" align="center"></a-text>
@@ -51,7 +52,7 @@
 				<a-entity id="sceneMenuLobby" class="scene" visible="false">
 					<a-sky src="#menuLobby"></a-sky>
 					<a-entity template="src: #link" data-src="sceneMenuStairs" data-thumb="#arrow" position="-11.490 -2.327 -13.254" rotation="3.000 50.000 -5.000" scale="1.500 1.500 0.000"></a-entity>
-					<a-entity template="src: #link" data-src="sceneMain" data-thumb="#arrow" position="20.000 -3.000 3.000" rotation="0.000 -100.000 0.000" scale="1.500 1.500 0.000"></a-entity>
+					<a-entity template="src: #link" data-src="sceneMenuEntrance" data-thumb="#arrow" position="20.000 -3.000 3.000" rotation="0.000 -100.000 0.000" scale="1.500 1.500 0.000"></a-entity>
 				</a-entity>
 
 				<a-entity id="sceneMenuStairs" class="scene" visible="false">
