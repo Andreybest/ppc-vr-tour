@@ -12,11 +12,10 @@
 		<script src="js/index.js"></script>
 	</head>
 	<body>
-		<a-scene starting-scene="scene: sceneMain">
+		<a-scene starting-scene="scene: sceneFloor3HallMiddle1">
 			<a-assets>
 				<audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
 				<img id="arrow" crossorigin="anonymous" src="img/navArrow.png" transparent="true" alpha-test="0.8">
-				<img id="main" crossorigin="anonymous" src="img/panoramas/main.jpg">
 				
 				<!--3 floor-->
 					<!--Middle-->
@@ -66,7 +65,7 @@
 
 			<!--3 floor-->
 			<!--Middle-->
-					<a-entity id="sceneFloor3HallMiddle1 " class="scene">
+					<a-entity id="sceneFloor3HallMiddle1" class="scene">
 						<a-sky src="#floor3HallMiddle1"></a-sky>
 						<a-entity template="src: #link" data-src="sceneFloor3HallMiddle2" data-thumb="#arrow" position="-0.65 -2.5 10" rotation="-30 180 0"></a-entity>
 						<a-entity template="src: #link" data-src="sceneFloor3HallRight1" data-thumb="#arrow" position="-0.65 -2.5 -7.5" rotation="-60 0 0"></a-entity>
