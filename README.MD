@@ -21,4 +21,4 @@ TO-DO:
 5. Optimisation
 
 Made with: A-Frame, JS and love <3  
-Made by: [Andrey Kotliar](https://github.com/Andreybest) and [Ivan Shapovalov](https://github.com/klas3)
+Made by: [Andrey Kotliar](https://github.com/Andreybest)
