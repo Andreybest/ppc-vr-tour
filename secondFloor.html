@@ -20,14 +20,26 @@
                 <!--Middle-->
                     <img id="hallMiddle1" crossorigin="anonymous" src="img/panoramas/2floor/hallMiddle1.jpg">
                     <img id="department" crossorigin="anonymous" src="img/panoramas/2floor/department.jpg">
+                    <img id="audience213" crossorigin="anonymous" src="img/panoramas/2floor/audience213.jpg">
                     <img id="hallMiddle2" crossorigin="anonymous" src="img/panoramas/2floor/hallMiddle2.jpg">
+                    <img id="library" crossorigin="anonymous" src="img/panoramas/2floor/library.jpg">
+                    <img id="audience211" crossorigin="anonymous" src="img/panoramas/2floor/audience211.jpg">
                 <!--/Middle-->
 
                 <!--Left side-->
                     <img id="hallLeft1" crossorigin="anonymous" src="img/panoramas/2floor/hallLeft1.jpg">
+                    <img id="audience208" crossorigin="anonymous" src="img/panoramas/2floor/audience208.jpg">
                     <img id="hallLeft2" crossorigin="anonymous" src="img/panoramas/2floor/hallLeft2.jpg">
+                    <img id="audience209" crossorigin="anonymous" src="img/panoramas/2floor/audience209.jpg">
                     <img id="hallLeft3" crossorigin="anonymous" src="img/panoramas/2floor/hallLeft3.jpg">
+                    <img id="audience205" crossorigin="anonymous" src="img/panoramas/2floor/audience205.jpg">
+                    <img id="audience207" crossorigin="anonymous" src="img/panoramas/2floor/audience207.jpg">
                     <img id="hallLeft4" crossorigin="anonymous" src="img/panoramas/2floor/hallLeft4.jpg">
+                    <img id="audience201Hall1" crossorigin="anonymous" src="img/panoramas/2floor/audience201Hall1.jpg">
+                    <img id="audience201Hall2" crossorigin="anonymous" src="img/panoramas/2floor/audience201Hall2.jpg">
+                    <img id="audience201Main" crossorigin="anonymous" src="img/panoramas/2floor/audience201Main.jpg">
+                    <img id="audience201Laboratory" crossorigin="anonymous" src="img/panoramas/2floor/audience201Laboratory.jpg">
+                    <img id="audience203" crossorigin="anonymous" src="img/panoramas/2floor/audience203.jpg">
                 <!--/Left side-->
 
                 <!--Right side-->
@@ -54,9 +66,10 @@
             <!--Middle-->
                 <a-entity id="sceneHallMiddle1" class="scene">
                     <a-sky src="#hallMiddle1"></a-sky>
-                    <a-entity template="src: #link" data-src="sceneHallMiddle2" data-thumb="#arrow" position="-0.65 -2.5 10" rotation="-30 180 0"></a-entity>
-                    <a-entity template="src: #link" data-src="sceneHallRight1" data-thumb="#arrow" position="0.2 -2.8 -8.5" rotation="-60 0 -5"></a-entity>
-                    <a-entity template="src: #link" data-src="sceneDepartment" data-thumb="#arrow" position="-3.6 -2.8 -1.4" rotation="0 70 5"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallMiddle2" data-thumb="#arrow" position="-1 -5.2 10.1" rotation="-30 180 0"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallRight1" data-thumb="#arrow" position="0.2 -4.7 -9.7" rotation="-60 0 -5"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneDepartment" data-thumb="#arrow" position="-5.2 -4.4 -1.4" rotation="0 70 5"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneAudience213" data-thumb="#arrow" position="4.2 -5 11.3" rotation="-80 -170 80"></a-entity>
                 </a-entity>
 
                 <a-entity id="sceneDepartment" class="scene" visible="false">
@@ -64,44 +77,115 @@
                     <a-entity template="src: #link" data-src="sceneHallMiddle1" data-thumb="#arrow" position="8.2 -3.7 -3.3" rotation="0.2 -80 -5"></a-entity>
                 </a-entity>
 
+                <a-entity id="sceneAudience213" class="scene" visible="false">
+                    <a-sky src="#audience213"></a-sky>
+                    <a-entity template="src: #link" data-src="sceneHallMiddle1" data-thumb="#arrow" position="15.3 -3.7 2.8" rotation="0.2 -100 5"></a-entity>
+                </a-entity>
+
                 <a-entity id="sceneHallMiddle2" class="scene" visible="false">
                     <a-sky src="#hallMiddle2"></a-sky>
-                    <a-entity template="src: #link" data-src="sceneHallLeft1" data-thumb="#arrow" position="-12.5 -2.3 0" rotation="-40 90 0"></a-entity>
-                    <a-entity template="src: #link" data-src="sceneHallMiddle1" data-thumb="#arrow" position="10.3 -3.2 -1.9" rotation="0.2 -90 6"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallLeft1" data-thumb="#arrow" position="-9.8 -2.3 0" rotation="-60 90 0"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneLibrary" data-thumb="#arrow" position="-2.7 -3.6 -8.4" rotation="10 30 -20"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneAudience211" data-thumb="#arrow" position="4 -4.1 3.6" rotation="-110 30 180"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallMiddle1" data-thumb="#arrow" position="10.3 -3.2 -1.9" rotation="10 -90 6"></a-entity>
+                </a-entity>
+
+                <a-entity id="sceneLibrary" class="scene" visible="false">
+                    <a-sky src="#library"></a-sky>
+                    <a-entity template="src: #link" data-src="sceneHallMiddle2" data-thumb="#arrow" position="10.6 -2.7 9.8" rotation="-70 -70 0"></a-entity>
+                </a-entity>
+
+                <a-entity id="sceneAudience211" class="scene" visible="false">
+                    <a-sky src="#audience211"></a-sky>
+                    <a-entity template="src: #link" data-src="sceneHallMiddle2" data-thumb="#arrow" position="6.1 -3.8 -13.4" rotation="40 -30 25"></a-entity>
                 </a-entity>
             <!--/Middle-->
 
             <!--Left side-->
                 <a-entity id="sceneHallLeft1" class="scene" visible="false">
                     <a-sky src="#hallLeft1"></a-sky>
-                    <a-entity template="src: #link" data-src="sceneHallLeft2" data-thumb="#arrow" position="-12.5 -2.3 0" rotation="-40 90 0"></a-entity>
-                    <a-entity template="src: #link" data-src="sceneHallMiddle2" data-thumb="#arrow" position="10.3 -3.2 -0.9" rotation="0.2 -80 0"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallLeft2" data-thumb="#arrow" position="-9.8 -2.3 0" rotation="-60 90 0"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneAudience208" data-thumb="#arrow" position="2.4 -4.6 -4.5" rotation="-30 0 0"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallMiddle2" data-thumb="#arrow" position="10.3 -3.2 -0.9" rotation="10 -80 0"></a-entity>
+                </a-entity>
+
+                <a-entity id="sceneAudience208" class="scene" visible="false">
+                    <a-sky src="#audience208"></a-sky>
+                    <a-entity template="src: #link" data-src="sceneHallLeft1" data-thumb="#arrow" position="-7 -3.2 -11" rotation="-45.5 7.7 9.3"></a-entity>
                 </a-entity>
 
                 <a-entity id="sceneHallLeft2" class="scene" visible="false">
                     <a-sky src="#hallLeft2"></a-sky>
-                    <a-entity template="src: #link" data-src="sceneHallLeft3" data-thumb="#arrow" position="-12.5 -2.3 0" rotation="-40 90 0"></a-entity>
-                    <a-entity template="src: #link" data-src="sceneHallLeft1" data-thumb="#arrow" position="10.3 -3.2 -2.8" rotation="0.2 -80 3"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallLeft3" data-thumb="#arrow" position="-12.5 -2.3 0" rotation="-60 90 0"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneAudience209" data-thumb="#arrow" position="0.9 -4.9 4.4" rotation="-110 10.7 180"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallLeft1" data-thumb="#arrow" position="10.3 -3.2 -2.8" rotation="10 -80 3"></a-entity>
+                </a-entity>
+
+                <a-entity id="sceneAudience209" class="scene" visible="false">
+                    <a-sky src="#audience209"></a-sky>
+                    <a-entity template="src: #link" data-src="sceneHallLeft2" data-thumb="#arrow" position="-8.2 -4.1 -9.2" rotation="-110 -130 180"></a-entity>
                 </a-entity>
 
                 <a-entity id="sceneHallLeft3" class="scene" visible="false">
                     <a-sky src="#hallLeft3"></a-sky>
                     <a-entity template="src: #link" data-src="sceneHallLeft4" data-thumb="#arrow" position="-0.3 -2.6 -7.4" rotation="-40 0 0"></a-entity>
-                    <a-entity template="src: #link" data-src="sceneHallLeft2" data-thumb="#arrow" position="10.3 -3.2 -0.2" rotation="0.2 -80 0"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneAudience207" data-thumb="#arrow" position="6.5 -4.1 4.7" rotation="-102 0 180"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneAudience205" data-thumb="#arrow" position="-5.2 -4.9 6.3" rotation="-110 6 180"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallLeft2" data-thumb="#arrow" position="10.3 -3.2 -0.2" rotation="10 -80 0"></a-entity>
+                </a-entity>
+
+                <a-entity id="sceneAudience207" class="scene" visible="false">
+                    <a-sky src="#audience207"></a-sky>
+                    <a-entity template="src: #link" data-src="sceneHallLeft3" data-thumb="#arrow" position="-8.1 -4.1 -14.1" rotation="-110 -188 180"></a-entity>
+                </a-entity>
+
+                <a-entity id="sceneAudience205" class="scene" visible="false">
+                    <a-sky src="#audience205"></a-sky>
+                    <a-entity template="src: #link" data-src="sceneHallLeft3" data-thumb="#arrow" position="1.6 -4.1 -10.6" rotation="-110 -180 180"></a-entity>
                 </a-entity>
 
                 <a-entity id="sceneHallLeft4" class="scene" visible="false">
                     <a-sky src="#hallLeft4"></a-sky>
-                    <a-entity template="src: #link" data-src="sceneHallLeft3" data-thumb="#arrow" position="10.3 -3.2 -2.7" rotation="0.2 -80 5"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneAudience201Hall1" data-thumb="#arrow" position="-10 -5 0" rotation="-110 -93 180"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneAudience203" data-thumb="#arrow" position="0 -4.6 4" rotation="-80 186.3 0"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallLeft3" data-thumb="#arrow" position="10.3 -3.2 -2.7" rotation="20 -80 5"></a-entity>
+                </a-entity>
+
+                <a-entity id="sceneAudience203" class="scene" visible="false">
+                    <a-sky src="#audience203"></a-sky>
+                    <a-entity template="src: #link" data-src="sceneHallLeft4" data-thumb="#arrow" position="-8 -4.1 -10.4" rotation="-103.2 -188 180"></a-entity>
+                </a-entity>
+
+                <a-entity id="sceneAudience201Hall1" class="scene" visible="false">
+                    <a-sky src="#audience201Hall1"></a-sky>
+                    <a-entity template="src: #link" data-src="sceneAudience201Hall2" data-thumb="#arrow" position="-0.6 -4.1 -7.4" rotation="-110 -183 180"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneAudience201Laboratoty" data-thumb="#arrow" position="-4.7 -4.1 -2" rotation="-110 -90 180"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallLeft4" data-thumb="#arrow" position="-1 -4.1 9" rotation="-110 0 180"></a-entity>
+                </a-entity>
+
+                <a-entity id="sceneAudience201Laboratoty" class="scene" visible="false">
+                    <a-sky src="#audience201Laboratory"></a-sky>
+                    <a-entity template="src: #link" data-src="sceneAudience201Hall1" data-thumb="#arrow" position="-3.3 -4.1 -13.2" rotation="-110 -192.7 180"></a-entity>
+                </a-entity>
+
+                <a-entity id="sceneAudience201Hall2" class="scene" visible="false">
+                    <a-sky src="#audience201Hall2"></a-sky>
+                    <a-entity template="src: #link" data-src="sceneAudience201Main" data-thumb="#arrow" position="7.2 -6.3 -1.5" rotation="-110 -219 180"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneAudience201Hall1" data-thumb="#arrow" position="-3.4 -4.1 -3.9" rotation="-110 -130 180"></a-entity>
+                </a-entity>
+
+                <a-entity id="sceneAudience201Main" class="scene" visible="false">
+                    <a-sky src="#audience201Main"></a-sky>
+                    <a-entity template="src: #link" data-src="sceneAudience201Hall2" data-thumb="#arrow" position="4.2 -6.2 -10" rotation="-110 -180 180"></a-entity>
                 </a-entity>
 
             <!--Right side-->
                 <a-entity id="sceneHallRight1" class="scene" visible="false">
                     <a-sky src="#hallRight1"></a-sky>
-                    <a-entity template="src: #link" data-src="sceneHallRight2" data-thumb="#arrow" position="-0.2 -3.5 8" rotation="-40 170 0"></a-entity>
-                    <a-entity template="src: #link" data-src="sceneHallMiddle1" data-thumb="#arrow" position="10.3 -3.2 -0.3" rotation="0.2 -80 0"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallRight2" data-thumb="#arrow" position="-0.2 -3.5 8" rotation="-70 170 0"></a-entity>
                     <a-entity template="src: #link" data-src="sceneAudience217" data-thumb="#arrow" position="4.5 -4.3 -3.3" rotation="0.2 -50 10"></a-entity>
                     <a-entity template="src: #link" data-src="sceneAudience218" data-thumb="#arrow" position="-5.2 -3.2 -2.4" rotation="0.2 60 -25"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallMiddle1" data-thumb="#arrow" position="10.3 -3.2 0.5" rotation="10 -80 0"></a-entity>
                 </a-entity>
 
                 <a-entity id="sceneAudience217" class="scene" visible="false">
@@ -111,14 +195,14 @@
 
                 <a-entity id="sceneAudience218" class="scene" visible="false">
                     <a-sky src="#audience218"></a-sky>
-                    <a-entity template="src: #link" data-src="sceneHallRight1" data-thumb="#arrow" position="-0.7 -5.3 7.4" rotation="-85 80 90"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallRight1" data-thumb="#arrow" position="-0.7 -4.7 11" rotation="-90 80 92"></a-entity>
                 </a-entity>
 
                 <a-entity id="sceneHallRight2" class="scene" visible="false">
                     <a-sky src="#hallRight2"></a-sky>
-                    <a-entity template="src: #link" data-src="sceneHallRight3" data-thumb="#arrow" position="-12.5 -2.3 -0.6" rotation="-40 90 0"></a-entity>
-                    <a-entity template="src: #link" data-src="sceneHallRight1" data-thumb="#arrow"position="10.2 -3.1 1" rotation="0.2 -100 3"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallRight3" data-thumb="#arrow" position="-10 -2.3 -0.6" rotation="-63.5 90 0"></a-entity>
                     <a-entity template="src: #link" data-src="sceneAudience221" data-thumb="#arrow" position="-0.5 -3.2 -1.9" rotation="-40 -60 40"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallRight1" data-thumb="#arrow"position="10.2 -3.1 1" rotation="10 -105 0"></a-entity>
                 </a-entity>
 
                 <a-entity id="sceneAudience221" class="scene" visible="false">
@@ -128,13 +212,13 @@
 
                 <a-entity id="sceneHallRight3" class="scene" visible="false">
                     <a-sky src="#hallRight3"></a-sky>
-                    <a-entity template="src: #link" data-src="sceneHallRight2" data-thumb="#arrow" position="11.1 -3.2 -0.9" rotation="0.2 -80 -5"></a-entity>
-                    <a-entity template="src: #link" data-src="sceneAudience222" data-thumb="#arrow" position="-9.5 -3.2 -0.2" rotation="-40 90 0"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneAudience222" data-thumb="#arrow" position="-9.5 -3.2 -0.2" rotation="10 90 0"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallRight2" data-thumb="#arrow" position="11.1 -3.2 -0.9" rotation="10 -80 -5"></a-entity>
                 </a-entity>
 
                 <a-entity id="sceneAudience222" class="scene" visible="false">
                     <a-sky src="#audience222"></a-sky>
-                    <a-entity template="src: #link" data-src="sceneHallRight3" data-thumb="#arrow" position="-12.6 -3 9.3" rotation="0.2 150 -5"></a-entity>
+                    <a-entity template="src: #link" data-src="sceneHallRight3" data-thumb="#arrow" position="10 -1.8 -7.4" rotation="-10 -20 -5"></a-entity>
                 </a-entity>
             <!--/Right side-->
 
