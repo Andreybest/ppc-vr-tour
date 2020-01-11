@@ -16,6 +16,8 @@
             <a-assets>
                 <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
                 <img id="arrow" crossorigin="anonymous" src="img/navArrow.png" transparent="true" alpha-test="0.8">
+                <img id="firstFloorDownStairs" crossorigin="anonymous" src="img/floorsIcons/firstFloorDownStairs.jpg">
+                <img id="thirdFloorUpStairs" crossorigin="anonymous" src="img/floorsIcons/thirdFloorUpStairs.jpg">
                 
                 <!--Middle-->
                     <img id="hallMiddle1" crossorigin="anonymous" src="img/panoramas/2floor/hallMiddle1.jpg">
@@ -70,6 +72,8 @@
                     <a-entity template="src: #link" data-src="sceneHallRight1" data-thumb="#arrow" position="0.2 -4.7 -9.7" rotation="-60 0 -5"></a-entity>
                     <a-entity template="src: #link" data-src="sceneDepartment" data-thumb="#arrow" position="-5.2 -4.4 -1.4" rotation="0 70 5"></a-entity>
                     <a-entity template="src: #link" data-src="sceneAudience213" data-thumb="#arrow" position="3.5 -4.2 10.2" rotation="-80 -185 90"></a-entity>
+                    <a-entity link="href: firstFloor.html" template="src: #link" data-src="" data-thumb="#firstFloorDownStairs" position="7 1 1.7" rotation="0 -100 0"></a-entity>
+                    <a-entity link="href: thirdFloor.html" template="src: #link" data-src="" data-thumb="#thirdFloorUpStairs" position="7 1 -1.7" rotation="0 -80 0"></a-entity>
                 </a-entity>
 
                 <a-entity id="sceneDepartment" class="scene" visible="false">
