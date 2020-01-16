@@ -18,9 +18,7 @@
 				<img id="arrow" crossorigin="anonymous" src="img/navArrow.png" transparent="true" alpha-test="0.8">
 				<img id="logo" crossorigin="anonymous" src="img/logo.png">
 				
-				<!--Menu-->
-					<img id="entrance" crossorigin="anonymous" src="img/panoramas/menu/menuEntrance.jpg">
-				<!--Menu-->
+				<img id="entrance" crossorigin="anonymous" src="img/panoramas/index/entrance.jpg">
 
 				<script id="link" type="text/html">
 					<a-entity class="link"
@@ -34,17 +32,15 @@
 				</script>
 			</a-assets>
 
-			<!--Menu-->
-				<a-entity id="sceneEntrance" class="scene">
-					<a-sky src="#entrance"></a-sky>
-					<a-image src="#logo" position="0 6 -7.6" rotation="0 0 0" scale="2 2 1"></a-image>
-					<a-text value="Welcome to VR tour of\nPoltava Polytechnic College!" position="0 4 -7.6" width="15" align="center"></a-text>
-					<a-text value="Use             to navigate between halls and audiences." position="0 1.8 -7.6" width="12" align="center"></a-text>
-					<a-image src="#arrow" position="-3 2 -7.6"></a-image>
-					<a-text value="Look around and enjoy your tour!" position="0 0 -7.6" width="11" align="center"></a-text>
-					<a-entity link="href: firstFloor.html;" template="src: #link" data-src="" data-thumb="#arrow" position="-11.5 -0.12 0.29" rotation="20 90 3"></a-entity>
-				</a-entity>
-			<!--Menu-->
+			<a-entity id="sceneEntrance" class="scene">
+				<a-sky src="#entrance"></a-sky>
+				<a-image src="#logo" position="0 6 -7.6" rotation="0 0 0" scale="2 2 1"></a-image>
+				<a-text value="Welcome to VR tour of\nPoltava Polytechnic College!" position="0 4 -7.6" width="15" align="center"></a-text>
+				<a-text value="Use             to navigate between halls and audiences." position="0 1.8 -7.6" width="12" align="center"></a-text>
+				<a-image src="#arrow" position="-3 2 -7.6"></a-image>
+				<a-text value="Look around and enjoy your tour!" position="0 0 -7.6" width="11" align="center"></a-text>
+				<a-entity link="href: firstFloor.html;" template="src: #link" data-src="" data-thumb="#arrow" position="-11.5 -0.12 0.29" rotation="20 90 3"></a-entity>
+			</a-entity>
 
 			<!-- Camera + cursor. -->
 			<a-camera rotation="0 90 0" wasd-controls-enabled="false">
