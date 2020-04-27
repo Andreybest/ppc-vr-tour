@@ -5,6 +5,7 @@ Explore all audiences, halls and other rooms from your browser!
 Link: https://andreybest.github.io/ppc-vr-tour/
 
 ![Phone Preview](img/phonePreview.jpg)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAndreybest%2Fppc-vr-tour.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FAndreybest%2Fppc-vr-tour?ref=badge_shield)
 
 **WARNING!**
 1. Page can load slow at first time, due to big amount of images, please wait a minute or two.
@@ -22,3 +23,7 @@ TO-DO:
 
 Made with: A-Frame, JS and love <3  
 Made by: [Andrey Kotliar](https://github.com/Andreybest) and [Ivan Shapovalov](https://github.com/klas3)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAndreybest%2Fppc-vr-tour.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FAndreybest%2Fppc-vr-tour?ref=badge_large)
